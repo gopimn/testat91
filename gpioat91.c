@@ -64,16 +64,18 @@ int gpio_init() {
 
 int main ()
 {
-  
+ printf("Welcome!!!!\n\n");
  gpio_init();
+ printf("Initizlize the GPIO =)!\n\n");
  GPIO_OUT(PIN_SCS);
  usleep(50);
  while (1)
    {
-   
+   printf("PIN A24 ON\n");
    GPIO_SET(PIN_SCS);
-   sleep(1);
+   sleep(2);
+   printf("PIN A24 ON\n");
    GPIO_CLR(PIN_SCS);
-   sleep(1);
+   sleep(2);
    }
 }
